@@ -1,0 +1,189 @@
+.badge {
+  position: relative;
+}
+
+.badge[data-badge]:before {
+  content: attr(data-badge);
+  position: absolute;
+  font-size: 0.8em;
+  min-width: 1em;
+  padding: 1px 2px;
+  line-height: 1em;
+  text-align: center;
+  display: block;
+  border-radius: 25%;
+  background: rgba(67,151,232,0.8);
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  color: #fff;
+  right: -0.5em;
+  top: -0.5em;
+}
+
+.badge.badge-outside:before {
+  left: calc(100% - 2px);
+  right: auto;
+}
+
+.badge.badge-top-left:before {
+  top: -0.5em;
+  left: -0.5em;
+  right: auto;
+}
+
+.badge.badge-top-right:before {
+  right: -0.5em;
+  top: -0.5em;
+}
+
+.badge.badge-bottom-right:before {
+  left: auto;
+  top: auto;
+  right: -0.5em;
+  bottom: -0.5em;
+}
+
+.badge.badge-bottom-left:before {
+  top: auto;
+  bottom: -0.5em;
+  left: -0.5em;
+  right: auto;
+}
+
+.badge.badge-top-left.badge-outside:before {
+  left: auto;
+  right: calc(100% - 2px);
+}
+
+.badge.badge-top-right.badge-outside:before {
+  left: calc(100% - 2px);
+  right: auto;
+}
+
+.badge.badge-bottom-right.badge-outside:before {
+  left: calc(100% - 2px);
+  right: auto;
+}
+
+.badge.badge-bottom-left.badge-outside:before {
+  left: auto;
+  right: calc(100% - 2px);
+}
+
+.badge.badge-right-center:before {
+  left: auto;
+  right: -2px;
+  top: calc(40% - 0.5em);
+  bottom: auto;
+}
+
+.badge.badge-left-center:before {
+  left: -2px;
+  right: auto;
+  top: calc(50% - 0.5em);
+}
+
+.badge.badge-right-center.badge-outside:before {
+  left: calc(100% - 2px);
+  right: auto;
+  top: calc(50% - 0.5em);
+}
+
+.badge.badge-left-center.badge-outside:before {
+  left: auto;
+  top: calc(50% - 0.5em);
+  right: calc(100% - 2px);
+}
+
+.badge.badge-bottom:before {
+  top: auto;
+  bottom: -0.5em;
+  left: -0.5em;
+}
+
+.badge.badge-top:before {
+  left: -0.5em;
+}
+
+.badge.badge-left:before {
+  left: -0.5em;
+  bottom: -0.5em;
+  right: auto;
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+}
+
+.badge.badge-right:before {
+  bottom: -0.5em;
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+}
+
+.badge.badge-left.badge-outside:before {
+  left: auto;
+  right: calc(100% - 2px);
+  bottom: -0.5em;
+}
+
+.badge.badge-top.badge-outside:before {
+  right: -0.5em;
+  bottom: calc(100% - 2px);
+  top: auto;
+}
+
+.badge.badge-bottom.badge-outside:before {
+  right: -0.5em;
+  bottom: auto;
+  top: calc(100% - 2px);
+}
+
+.badge.badge-red:before {
+  color: white;
+  background-color: #a00;
+}
+
+.badge.badge-blue:before {
+  background: rgba(67,151,232,0.8);
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.badge.badge-black:before {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.badge.badge-noborder:before {
+  border: none;
+}
+
+.badge.badge-noshadow:before {
+  box-shadow: none;
+}
+
+.badge.badge-l:before {
+  font-size: 0.95em;
+}
+
+.badge.badge-xl:before {
+  font-size: 1em;
+}
+
+.badge.badge-xxl:before {
+  font-size: 1.1em;
+}
+
+.badge.badge-s:before {
+  font-size: 0.75em;
+}
+
+.badge.badge-xs:before {
+  font-size: 0.7em;
+}
+
+.badge[data-badge=""]:before {
+  content: none;
+}
