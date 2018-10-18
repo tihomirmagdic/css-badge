@@ -90,8 +90,8 @@ Every class can be combined with class **badge-outside** to display a badge outs
 | badge-black      | black badge, white text |
 | badge-noborder      | badge without border |
 | badge-noshadow      | badge without shadow |
-| badge-l      | larger badge |
-| badge-xl      | extra larger badge |
+| badge-l      | large badge |
+| badge-xl      | extra large badge |
 | badge-xxl      | more larger badge |
-| badge-s      | smaller badge |
+| badge-s      | small badge |
 | badge-xs     | extra small badge |
