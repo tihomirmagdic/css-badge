@@ -69,7 +69,7 @@ Use class **badge-outside** to display badge outside of element content (2px bor
 
 | CSS class | Alignment | Note |
 | :----------- | :----------- | :----------- |
-| badge-top-right      | top-right | default |
+| badge-top-right       | top-right | default |
 | badge-top-left      | top-left      |    |
 | badge-bottom-right | bottom-right      |     |
 | badge-bottom-left | bottom-left      |     |
