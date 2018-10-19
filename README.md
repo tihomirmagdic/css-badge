@@ -10,9 +10,11 @@ Any element with **data-badge** attribute and class **hasbadge**
 
 Assign badge content to data-badge attribute:
 
+```html
     <button data-badge="new" class="hasbadge">action</button>
     
     <div style="border: 1px solid red" data-badge="new" class="hasbadge">line 1<br />line 2</div>
+```
 
 ## Badge alignment
 
@@ -116,5 +118,7 @@ with class **badge-inside** to display a badge inside of the element content.
 | badge-xxl      | more larger badge |
 | badge-s      | small badge |
 | badge-xs     | extra small badge |
+| badge-xxs     | more smaller badge |
+| badge-dot     | dot in the badge (requires Font Awesome) |
 
 Note: Also, default style (text, background and border) is predefined with scss variables.

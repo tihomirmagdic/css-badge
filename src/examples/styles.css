@@ -32,4 +32,6 @@ button, div, label, span, a, h1, h2, h3, h4 {
     width: 90%;
 }
   
-  
+.fa-circle {
+    content: '';
+}

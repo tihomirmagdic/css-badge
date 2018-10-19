@@ -348,6 +348,16 @@ $clBrDark: #343a40;
   font-size: 0.7em;
 }
 
+.hasbadge[data-badge].badge-xxs:before {
+  font-size: 0.5em;
+}
+
 .hasbadge[data-badge=""]:before {
   content: none;
+}
+
+.hasbadge[data-badge].badge-dot:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\F111';
+  font-weight: 900;
 }
