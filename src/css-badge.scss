@@ -1,8 +1,37 @@
-.badge {
+$clTextDefault: #fff;
+$clBgDefault: #4397e8cc;
+$clBrDefault: #ffffffcc;
+
+$clTextPrimary: #fff;
+$clBgPrimary: #0069d9;
+$clBrPrimary: #0062cc;
+$clTextSecondary: #fff;
+$clBgSecondary: #6c757d;
+$clBrSecondary: #6c757d;
+$clTextSuccess: #fff;
+$clBgSuccess: #28a745;
+$clBrSuccess: #28a745;
+$clTextDanger: #fff;
+$clBgDanger: #dc3545;
+$clBrDanger: #dc3545;
+$clTextWarning: #212529;
+$clBgWarning: #ffc107;
+$clBrWarning: #ffc107;
+$clTextInfo: #fff;
+$clBgInfo: #17a2b8;
+$clBrInfo: #17a2b8;
+$clTextLight: #212529;
+$clBgLight: #f8f9fa;
+$clBrLight: #f8f9fa;
+$clTextDark: #fff;
+$clBgDark: #343a40;
+$clBrDark: #343a40;
+
+.hasbadge[data-badge] {
   position: relative;
 }
 
-.badge[data-badge]:before {
+.hasbadge[data-badge]:before {
   content: attr(data-badge);
   position: absolute;
   font-size: 0.8em;
@@ -12,100 +41,137 @@
   text-align: center;
   display: block;
   border-radius: 25%;
-  background: rgba(67,151,232,0.8);
-  border: 1px solid rgba(255,255,255,0.8);
+  background: $clBgDefault;
+  border: 1px solid $clBrDefault;
   box-shadow: 0 1px 2px rgba(0,0,0,0.4);
-  color: #fff;
+  color: $clTextDefault;
   right: -0.5em;
   top: -0.5em;
 }
 
-.badge.badge-outside:before {
+.hasbadge[data-badge].badge-outside:before {
   left: calc(100% - 2px);
   right: auto;
 }
 
-.badge.badge-top-left:before {
+.hasbadge[data-badge].badge-top-left:before {
   top: -0.5em;
   left: -0.5em;
   right: auto;
 }
 
-.badge.badge-top-right:before {
+.hasbadge[data-badge].badge-top-right:before {
   right: -0.5em;
   top: -0.5em;
 }
 
-.badge.badge-bottom-right:before {
+.hasbadge[data-badge].badge-bottom-right:before {
   left: auto;
   top: auto;
   right: -0.5em;
   bottom: -0.5em;
 }
 
-.badge.badge-bottom-left:before {
+.hasbadge[data-badge].badge-bottom-left:before {
   top: auto;
   bottom: -0.5em;
   left: -0.5em;
   right: auto;
 }
 
-.badge.badge-top-left.badge-outside:before {
+.hasbadge[data-badge].badge-top-left.badge-outside:before {
   left: auto;
   right: calc(100% - 2px);
 }
 
-.badge.badge-top-right.badge-outside:before {
+.hasbadge[data-badge].badge-top-right.badge-outside:before {
   left: calc(100% - 2px);
   right: auto;
 }
 
-.badge.badge-bottom-right.badge-outside:before {
+.hasbadge[data-badge].badge-bottom-right.badge-outside:before {
   left: calc(100% - 2px);
   right: auto;
 }
 
-.badge.badge-bottom-left.badge-outside:before {
+.hasbadge[data-badge].badge-bottom-left.badge-outside:before {
   left: auto;
   right: calc(100% - 2px);
 }
 
-.badge.badge-right-center:before {
+.hasbadge[data-badge].badge-inside:before {
+  right: 2px;
+  top: 2px;
+}
+
+.hasbadge[data-badge].badge-top-left.badge-inside:before {
+  top: 2px;
+  left: 2px;
+  right: auto;
+}
+
+.hasbadge[data-badge].badge-top-right.badge-inside:before {
+  right: 2px;
+  top: 2px;
+}
+
+.hasbadge[data-badge].badge-bottom-right.badge-inside:before {
+  right: 2px;
+  bottom: 2px;
+  top: auto;
+}
+
+.hasbadge[data-badge].badge-bottom-left.badge-inside:before {
+  bottom: 2px;
+  left: 2px;
+  right: auto;
+  top: auto;
+}
+
+.hasbadge[data-badge].badge-right-center:before {
   left: auto;
   right: -2px;
-  top: calc(40% - 0.5em);
+  top: calc(50% - 0.5em);
   bottom: auto;
 }
 
-.badge.badge-left-center:before {
+.hasbadge[data-badge].badge-left-center:before {
   left: -2px;
   right: auto;
   top: calc(50% - 0.5em);
 }
 
-.badge.badge-right-center.badge-outside:before {
+.hasbadge[data-badge].badge-right-center.badge-outside:before {
   left: calc(100% - 2px);
   right: auto;
   top: calc(50% - 0.5em);
 }
 
-.badge.badge-left-center.badge-outside:before {
+.hasbadge[data-badge].badge-left-center.badge-outside:before {
   left: auto;
   top: calc(50% - 0.5em);
   right: calc(100% - 2px);
 }
 
-.badge.badge-bottom:before {
+.hasbadge[data-badge].badge-right-center.badge-inside:before {
+  right: 2px;
+}
+
+.hasbadge[data-badge].badge-left-center.badge-inside:before {
+  left: 2px;
+}
+
+.hasbadge[data-badge].badge-bottom:before {
   top: auto;
   bottom: -0.5em;
   left: -0.5em;
 }
 
-.badge.badge-top:before {
+.hasbadge[data-badge].badge-top:before {
   left: -0.5em;
 }
 
-.badge.badge-left:before {
+.hasbadge[data-badge].badge-left:before {
   left: -0.5em;
   bottom: -0.5em;
   right: auto;
@@ -114,76 +180,174 @@
   align-items: center;
 }
 
-.badge.badge-right:before {
+.hasbadge[data-badge].badge-right:before {
   bottom: -0.5em;
   display: flex;
   line-height: 100%;
   align-items: center;
 }
 
-.badge.badge-left.badge-outside:before {
+.hasbadge[data-badge].badge-left.badge-outside:before {
   left: auto;
   right: calc(100% - 2px);
   bottom: -0.5em;
 }
 
-.badge.badge-top.badge-outside:before {
+.hasbadge[data-badge].badge-top.badge-outside:before {
   right: -0.5em;
   bottom: calc(100% - 2px);
   top: auto;
 }
 
-.badge.badge-bottom.badge-outside:before {
+.hasbadge[data-badge].badge-bottom.badge-outside:before {
   right: -0.5em;
   bottom: auto;
   top: calc(100% - 2px);
 }
 
-.badge.badge-red:before {
-  color: white;
-  background-color: #a00;
+.hasbadge[data-badge].badge-bottom.badge-inside:before {
+  bottom: 2px;
+  left: 2px;
 }
 
-.badge.badge-blue:before {
-  background: rgba(67,151,232,0.8);
-  border: 1px solid rgba(255,255,255,0.8);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
-  color: #fff;
+.hasbadge[data-badge].badge-top.badge-inside:before {
+  left: 2px;
 }
 
-.badge.badge-black:before {
-  background: rgba(0,0,0,0.8);
-  color: #fff;
+.hasbadge[data-badge].badge-left.badge-inside:before {
+  left: 2px;
+  bottom: 2px;
 }
 
-.badge.badge-noborder:before {
+.hasbadge[data-badge].badge-right.badge-inside:before {
+  bottom: 2px;
+}
+
+.hasbadge[data-badge].badge-primary:before {
+  color: $clTextPrimary;
+  background-color: $clBgPrimary;
+  border-color: $clBrPrimary;
+}
+
+.hasbadge[data-badge].badge-primary.badge-inverse:before {
+  color: $clBgPrimary;
+  background-color: $clTextPrimary;
+  border-color: $clBrPrimary;
+}
+
+.hasbadge[data-badge].badge-secondary:before {
+  color: $clTextSecondary;
+  background-color: $clBgSecondary;
+  border-color: $clBrSecondary;
+}
+
+.hasbadge[data-badge].badge-secondary.badge-inverse:before {
+  color: $clBgSecondary;
+  background-color: $clTextSecondary;
+}
+
+.hasbadge[data-badge].badge-success:before {
+  color: $clTextSuccess;
+  background-color: $clBgSuccess;
+  border-color: $clBrSuccess;
+}
+
+.hasbadge[data-badge].badge-success.badge-inverse:before {
+  color: $clBgSuccess;
+  background-color: $clTextSuccess;
+}
+
+.hasbadge[data-badge].badge-danger:before {
+  color: $clTextDanger;
+  background-color: $clBgDanger;
+  border-color: $clBrDanger;
+}
+
+.hasbadge[data-badge].badge-danger.badge-inverse:before {
+  color: $clBgDanger;
+  background-color: $clTextDanger;
+}
+
+.hasbadge[data-badge].badge-warning:before {
+  color: $clTextWarning;
+  background-color: $clBgWarning;
+  border-color: $clBrWarning;
+}
+
+.hasbadge[data-badge].badge-warning.badge-inverse:before {
+  color: $clBgWarning;
+  background-color: $clTextWarning;
+}
+
+.hasbadge[data-badge].badge-info:before {
+  color: $clTextInfo;
+  background-color: $clBgInfo;
+  border-color: $clBrInfo;
+}
+
+.hasbadge[data-badge].badge-info.badge-inverse:before {
+  color: $clBgInfo;
+  background-color: $clTextInfo;
+}
+
+.hasbadge[data-badge].badge-light:before {
+  color: $clTextLight;
+  background-color: $clBgLight;
+  border-color: $clBrLight;
+}
+
+.hasbadge[data-badge].badge-light.badge-inverse:before {
+  color: $clBgLight;
+  background-color: $clTextLight;
+}
+
+.hasbadge[data-badge].badge-dark:before {
+  color: $clTextDark;
+  background-color: $clBgDark;
+  border-color: $clBrDark;
+}
+
+.hasbadge[data-badge].badge-dark.badge-inverse:before {
+  color: $clBgDark;
+  background-color: $clTextDark;
+}
+
+.hasbadge[data-badge].badge-noborder:before {
   border: none;
 }
 
-.badge.badge-noshadow:before {
+.hasbadge[data-badge].badge-noshadow:before {
   box-shadow: none;
 }
 
-.badge.badge-l:before {
+.hasbadge[data-badge].badge-circled:before {
+  border-radius: 50%;
+}
+
+.hasbadge[data-badge].badge-squared:before {
+  border-radius: 0;
+}
+
+.hasbadge[data-badge].badge-l:before {
   font-size: 0.95em;
 }
 
-.badge.badge-xl:before {
+.hasbadge[data-badge].badge-xl:before {
   font-size: 1em;
 }
 
-.badge.badge-xxl:before {
+.hasbadge[data-badge].badge-xxl:before {
   font-size: 1.1em;
 }
 
-.badge.badge-s:before {
+.hasbadge[data-badge].badge-s:before {
   font-size: 0.75em;
 }
 
-.badge.badge-xs:before {
+.hasbadge[data-badge].badge-xs:before {
   font-size: 0.7em;
 }
 
-.badge[data-badge=""]:before {
+.hasbadge[data-badge=""]:before {
   content: none;
 }
