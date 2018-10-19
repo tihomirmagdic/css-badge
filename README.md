@@ -1,12 +1,12 @@
 # CSS-Badge
 
-CSS-only badge is actually based on two implementations:
+CSS-only badge can be used in two ways:
 - any element with data-badge attribute - displays non-formatted element content
 - class for full HTML formatting
 
 ## Usage
 
-Any element with **data-badge** attribute and class **hasbadge**
+### Any element with **data-badge** attribute and class **hasbadge**
 
 Assign badge content to data-badge attribute:
 
@@ -16,9 +16,21 @@ Assign badge content to data-badge attribute:
     <div style="border: 1px solid red" data-badge="new" class="hasbadge">line 1<br />line 2</div>
 ```
 
-## Badge alignment
+### Class **badge**
 
-### Corners - in element content (little border overlapping)
+```html
+    <div>List of messages<span class="badge">new</span></div>
+
+    <div>List of messages badge-primary<span class="badge badge-primary">new</span></div>
+
+    <div>List of messages badge-primary badge-inverse<span class="badge badge-primary badge-inverse">new</span></div>
+```
+
+## Detailed usage of **data-badge** and class **hasbadge**
+
+### Badge alignment
+
+#### Corners - in element content (little border overlapping)
 
 By default badge is displayed on top-right corner in element content.
 
@@ -38,7 +50,7 @@ For **bottom-left** alignment use class **badge-bottom-left**:
 
     <button data-badge="new" class="hasbadge badge-bottom-left">bottom-left</button>
 
-### Sides - in element content (little border overlapping)
+#### Sides - in element content (little border overlapping)
 
 For **right** side alignment use class **badge-right**:
 
@@ -56,7 +68,7 @@ For **bottom** side alignment use class **badge-bottom**:
 
     <button data-badge="new" class="hasbadge badge-bottom">bottom</button>
 
-### Badge outside element content
+#### Badge outside element content
 
 Use class **badge-outside** to display badge outside of the element content (2px border overlapping).
 
@@ -68,7 +80,7 @@ Use class **badge-outside** to display badge outside of the element content (2px
 
     <button data-badge="new" class="hasbadge badge-bottom-left badge-outside">bottom-left - outside</button>
 
-### Badge inside element content
+#### Badge inside element content
 
 Use class **badge-inside** to display badge inside of the element content.
 
@@ -80,7 +92,7 @@ Use class **badge-inside** to display badge inside of the element content.
 
     <button data-badge="new" class="hasbadge badge-bottom-left badge-inside">bottom-left - inside</button>
 
-## Classes overview
+### Classes overview
 
 | CSS class | Alignment | Note |
 | :----------- | :----------- | :----------- |
@@ -98,7 +110,7 @@ By default badge is displayed in the element content with little border overlapp
 Every class can be combined with class **badge-outside** to display a badge outside of the element content or
 with class **badge-inside** to display a badge inside of the element content.
 
-## Style classes
+### Style classes
 | CSS class   |  Note        |
 | :----------- |  :----------- |
 | badge-primary      | predefined with scss variables |
@@ -122,3 +134,18 @@ with class **badge-inside** to display a badge inside of the element content.
 | badge-dot     | dot in the badge (requires Font Awesome) |
 
 Note: Also, default style (text, background and border) is predefined with scss variables.
+
+## Detailed usage of class **badge**
+
+### Badge alignment
+
+Alignment is defined by inner element. With class **badge-top** badge is positioned little upper.
+
+```html
+    <div>
+        <span class="badge">15 items</span>
+        List of messages
+        <span class="badge badge-top">15 items</span>
+    </div>
+```
+Style classes are same as style classes for class **hasbadge**.

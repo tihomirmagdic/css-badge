@@ -27,6 +27,10 @@ $clTextDark: #fff;
 $clBgDark: #343a40;
 $clBrDark: #343a40;
 
+/*
+  data-badge attribute
+*/
+
 .hasbadge[data-badge] {
   position: relative;
 }
@@ -360,4 +364,184 @@ $clBrDark: #343a40;
   font-family: "Font Awesome 5 Free";
   content: '\F111';
   font-weight: 900;
+}
+
+/*
+  class .badge
+*/
+
+.badge {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  aheight: 1.2em;
+  line-height: normal;
+  border: 1px solid;
+  border-radius: .8em;
+  font-size: .5em;
+  padding: 0.1em 0.7em;
+  margin-right: .3em;
+  margin-left: .3em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.badge.badge-top {
+  vertical-align: super;
+  align-self: self-start;
+}
+
+.badge.badge-noborder {
+  border: none;
+}
+
+.badge.badge-noshadow {
+  box-shadow: none;
+}
+
+.badge.badge-circled {
+  border-radius: 50%;
+}
+
+.badge.badge-squared {
+  border-radius: 0;
+}
+
+.badge.badge-dot:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\F111';
+  font-weight: 900;
+}
+
+.badge.badge-dot {
+  padding: 0.1em;
+}
+
+.badge.badge-xxl {
+  font-size: 0.7em;
+}
+
+.badge.badge-xl {
+  font-size: .6em;
+}
+
+.badge.badge-l {
+  font-size: .55em;
+}
+
+.badge.badge-s {
+  font-size: .45em;
+}
+
+.badge.badge-xs {
+  font-size: .4em;
+}
+
+.badge.badge-xxs {
+  font-size: .35em;
+}
+
+.badge {
+  background: $clBgDefault;
+  color: $clTextDefault;
+  border-color: $clBrDefault;
+}
+
+.badge.badge-primary {
+  background: $clBgPrimary;
+  color: $clTextPrimary;
+  border-color: $clBrPrimary;
+}
+
+.badge.badge-primary.badge-inverse {
+  background: $clTextPrimary;
+  color: $clBgPrimary;
+  border-color: $clBgPrimary;
+}
+
+.badge.badge-secondary {
+  background: $clBgSecondary;
+  color: $clTextSecondary;
+  border-color: $clBrSecondary;
+}
+
+.badge.badge-secondary.badge-inverse {
+  background: $clTextSecondary;
+  color: $clBgSecondary;
+  border-color: $clBgSecondary;
+}
+
+.badge.badge-success {
+  background: $clBgSuccess;
+  color: $clTextSuccess;
+  border-color: $clBrSuccess;
+}
+
+.badge.badge-success.badge-inverse {
+  background: $clTextSuccess;
+  color: $clBgSuccess;
+  border-color: $clBgSuccess;
+}
+
+.badge.badge-danger {
+  background: $clBgDanger;
+  color: $clTextDanger;
+  border-color: $clBrDanger;
+}
+
+.badge.badge-danger.badge-inverse {
+  background: $clTextDanger;
+  color: $clBgDanger;
+  border-color: $clBgDanger;
+}
+
+.badge.badge-warning {
+  background: $clBgWarning;
+  color: $clTextWarning;
+  border-color: $clBrWarning;
+}
+
+.badge.badge-warning.badge-inverse {
+  background: $clTextWarning;
+  color: $clBgWarning;
+}
+
+.badge.badge-info {
+  background: $clBgInfo;
+  color: $clTextInfo;
+  border-color: $clBrInfo;
+}
+
+.badge.badge-info.badge-inverse {
+  background: $clTextInfo;
+  color: $clBgInfo;
+  border-color: $clBgInfo;
+}
+
+.badge.badge-light {
+  background: $clBgLight;
+  color: $clTextLight;
+  border-color: $clBrLight;
+}
+
+.badge.badge-light.badge-inverse {
+  background: $clTextLight;
+  color: $clBgLight;
+  border-color: $clBgLight;
+}
+
+.badge.badge-dark {
+  background: $clBgDark;
+  color: $clTextDark;
+  border-color: $clBrDark;
+}
+
+.badge.badge-dark.badge-inverse {
+  background: $clTextDark;
+  color: $clBgDark;
+  border-color: $clBgDark;
 }

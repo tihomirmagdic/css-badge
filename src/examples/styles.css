@@ -1,37 +1,51 @@
-hr {
+body {
+    font-family: Metropolis,"Avenir Next","Helvetica Neue",Arial,sans-serif;
+}
+
+.example1 div {
+    font-size: 10px;
+    border: 1px solid red;
+    margin: 15px;
+    padding-bottom: 2px;
+}
+
+.example1 hr {
     margin-bottom: 20px;
 }
-  
-table {
+    
+.example1 table {
     background-color: #eee;
     width: 80%;
     border-collapse: collapse;
-  }
+}
 
-table td {
+.example1 table td {
     border: 1px solid #aaa;
     padding: 3px 2px;
 }
 
-table {
+.example1 table {
     margin: 10px 30px;
 }
-  
-button, div, label, span, a, h1, h2, h3, h4 {
+    
+.example1 button, .example1 div, .example1 label, .example1 span, .example1 a, .example1 h1, .example1 h2, .example1 h3, .example1 h4 {
     width: 120px;
     margin: 10px 30px;
     border: 1px solid red;
     font-family: arial;
     padding: 0px 4px;
 }
-  
-.info {
+    
+.example1 .info {
     border: 0;
     margin: 10px 10px;
     border-bottom: 1px solid blue;
     width: 90%;
 }
-  
-.fa-circle {
-    content: '';
+
+.example2 div {
+    font-size: 10px;
+    border: 1px solid red;
+    margin: 15px;
+    padding-bottom: 2px;
 }
