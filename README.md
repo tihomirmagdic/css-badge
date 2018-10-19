@@ -19,11 +19,11 @@ Assign badge content to data-badge attribute:
 ### Class **badge**
 
 ```html
-    <div>List of messages<span class="badge">new</span></div>
+<div>List of messages<span class="badge">new</span></div>
 
-    <div>List of messages badge-primary<span class="badge badge-primary">new</span></div>
+<div>List of messages badge-primary<span class="badge badge-primary">new</span></div>
 
-    <div>List of messages badge-primary badge-inverse<span class="badge badge-primary badge-inverse">new</span></div>
+<div>List of messages badge-primary badge-inverse<span class="badge badge-primary badge-inverse">new</span></div>
 ```
 
 ## Detailed usage of **data-badge** and class **hasbadge**
