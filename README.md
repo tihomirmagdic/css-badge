@@ -16,6 +16,9 @@ Assign badge content to data-badge attribute:
 <div style="border: 1px solid red" data-badge="new" class="hasbadge">line 1<br />line 2</div>
 ```
 
+[Codepen](https://codepen.io/tihomirmagdic/pen/zmRpJX)
+[Detailed usage](#attr)
+
 ### Class **badge**
 
 ```html
@@ -26,6 +29,10 @@ Assign badge content to data-badge attribute:
 <div>List of messages badge-primary badge-inverse<span class="badge badge-primary badge-inverse">new</span></div>
 ```
 
+[Codepen](https://codepen.io/tihomirmagdic/pen/EdQRYY?editors=1100)
+[Detailed usage](#class)
+
+<a name="attr"></a>
 ## Detailed usage of **data-badge** and class **hasbadge**
 
 ### Badge alignment
@@ -155,6 +162,7 @@ with class **badge-inside** to display a badge inside of the element content.
 
 Note: Also, default style (text, background and border) is predefined with scss variables.
 
+<a name="class"></a>
 ## Detailed usage of class **badge**
 
 ### Badge alignment

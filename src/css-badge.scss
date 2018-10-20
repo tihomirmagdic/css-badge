@@ -376,23 +376,19 @@ $clBrDark: #343a40;
   align-items: center;
   justify-content: center;
   text-align: center;
-  aheight: 1.2em;
   line-height: normal;
   border: 1px solid;
-  border-radius: .8em;
-  font-size: .5em;
-  padding: 0.1em 0.7em;
-  margin-right: .3em;
-  margin-left: .3em;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+  border-radius: 25%;
+  font-size: .8em;
+  padding: 0.1em 0.5em;
+  margin: 0.2em 0.3em;
   white-space: nowrap;
   box-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
 .badge.badge-top {
-  vertical-align: super;
-  align-self: self-start;
+  position: relative;
+  top: -0.7em;
 }
 
 .badge.badge-noborder {
@@ -422,27 +418,27 @@ $clBrDark: #343a40;
 }
 
 .badge.badge-xxl {
-  font-size: 0.7em;
+  font-size: 1em; 
 }
 
 .badge.badge-xl {
-  font-size: .6em;
+  font-size: .9em; 
 }
 
 .badge.badge-l {
-  font-size: .55em;
+  font-size: 0.85em; 
 }
 
 .badge.badge-s {
-  font-size: .45em;
+  font-size: .7em; 
 }
 
 .badge.badge-xs {
-  font-size: .4em;
+  font-size: .6em; 
 }
 
 .badge.badge-xxs {
-  font-size: .35em;
+  font-size: .55em; 
 }
 
 .badge {
