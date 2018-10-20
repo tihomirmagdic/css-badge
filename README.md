@@ -17,6 +17,7 @@ Assign badge content to data-badge attribute:
 ```
 
 [Codepen](https://codepen.io/tihomirmagdic/pen/zmRpJX)
+
 [Detailed usage](#attr)
 
 ### Class **badge**
@@ -30,6 +31,7 @@ Assign badge content to data-badge attribute:
 ```
 
 [Codepen](https://codepen.io/tihomirmagdic/pen/EdQRYY?editors=1100)
+
 [Detailed usage](#class)
 
 <a name="attr"></a>
